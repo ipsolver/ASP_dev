@@ -1,0 +1,48 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лабораторна робота</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Інформація про лабораторну роботу</h2>
+    <table>
+        <tr>
+            <th>Параметр</th>
+            <th>Значення</th>
+        </tr>
+        <tr>
+            <td>Номер роботи</td>
+            <td>@Model.Number</td>
+        </tr>
+        <tr>
+            <td>Тема</td>
+            <td>@Model.Topic</td>
+        </tr>
+        <tr>
+            <td>Мета</td>
+            <td>@Model.Goal</td>
+        </tr>
+        <tr>
+            <td>Виконавець</td>
+            <td>@Model.Author</td>
+        </tr>
+    </table>
+</body>
+</html>

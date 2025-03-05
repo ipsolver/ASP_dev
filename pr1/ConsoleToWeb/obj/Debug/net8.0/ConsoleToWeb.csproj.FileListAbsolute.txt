@@ -1,0 +1,14 @@
+D:\ASP_development\pr1\ConsoleToWeb\bin\Debug\net8.0\ConsoleToWeb.exe
+D:\ASP_development\pr1\ConsoleToWeb\bin\Debug\net8.0\ConsoleToWeb.deps.json
+D:\ASP_development\pr1\ConsoleToWeb\bin\Debug\net8.0\ConsoleToWeb.runtimeconfig.json
+D:\ASP_development\pr1\ConsoleToWeb\bin\Debug\net8.0\ConsoleToWeb.dll
+D:\ASP_development\pr1\ConsoleToWeb\bin\Debug\net8.0\ConsoleToWeb.pdb
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ConsoleToWeb.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ConsoleToWeb.AssemblyInfoInputs.cache
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ConsoleToWeb.AssemblyInfo.cs
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ConsoleToWeb.csproj.CoreCompileInputs.cache
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ConsoleToWeb.dll
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\refint\ConsoleToWeb.dll
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ConsoleToWeb.pdb
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ConsoleToWeb.genruntimeconfig.cache
+D:\ASP_development\pr1\ConsoleToWeb\obj\Debug\net8.0\ref\ConsoleToWeb.dll
