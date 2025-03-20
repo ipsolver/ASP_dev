@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\MiddlewareSandbox.props" />
-</Project>
