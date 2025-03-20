@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebFromCli")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7aa255ea0db4eaee4a0c55e7af7f2bef56077afe")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebFromCli")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebFromCli")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -28,3 +28,4 @@ D:\ASP_development\pr1\MvcLab\obj\Debug\net8.0\refint\MvcLab.dll
 D:\ASP_development\pr1\MvcLab\obj\Debug\net8.0\MvcLab.pdb
 D:\ASP_development\pr1\MvcLab\obj\Debug\net8.0\MvcLab.genruntimeconfig.cache
 D:\ASP_development\pr1\MvcLab\obj\Debug\net8.0\ref\MvcLab.dll
+D:\ASP_development\pr1\MvcLab\obj\Debug\net8.0\MvcLab.sourcelink.json

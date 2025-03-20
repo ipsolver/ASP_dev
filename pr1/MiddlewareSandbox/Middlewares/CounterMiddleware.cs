@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 
 namespace MiddlewareSandbox.Middlewares
 {
-    // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
     public class CounterMiddleware
     {
         private readonly RequestDelegate _next;
@@ -18,7 +17,6 @@ namespace MiddlewareSandbox.Middlewares
         public async Task InvokeAsync(HttpContext context)
         {
             counter++;
-           // context.Response.Headers.Add("X-Request-Count", counter.ToString());
 
             if (context.Request.Path == "/count")
             {

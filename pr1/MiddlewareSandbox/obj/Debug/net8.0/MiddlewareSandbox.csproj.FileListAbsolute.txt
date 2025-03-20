@@ -31,3 +31,4 @@ D:\ASP_development\pr1\MiddlewareSandbox\obj\Debug\net8.0\refint\MiddlewareSandb
 D:\ASP_development\pr1\MiddlewareSandbox\obj\Debug\net8.0\MiddlewareSandbox.pdb
 D:\ASP_development\pr1\MiddlewareSandbox\obj\Debug\net8.0\MiddlewareSandbox.genruntimeconfig.cache
 D:\ASP_development\pr1\MiddlewareSandbox\obj\Debug\net8.0\ref\MiddlewareSandbox.dll
+D:\ASP_development\pr1\MiddlewareSandbox\obj\Debug\net8.0\MiddlewareSandbox.sourcelink.json
