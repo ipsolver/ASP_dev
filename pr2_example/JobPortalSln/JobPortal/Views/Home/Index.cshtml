@@ -1,0 +1,26 @@
+﻿@model JobPortal.Models.ViewModels.UsersList
+
+<div class="container">
+    @foreach (var user in Model.Users)
+    {
+        <div class="card mb-2 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title">@user.Name</h3>
+                <h4 class="card-subtitle text-muted">@user.PhoneNumber</h4>
+                <h5 class="card-subtitle text-muted">@user.City</h5>
+                <p class="card-text mt-2">@user.Description</p>
+            </div>
+        </div>
+    }
+
+    <nav>
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= Model.PagingInfo.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PagingInfo.CurrentPage ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

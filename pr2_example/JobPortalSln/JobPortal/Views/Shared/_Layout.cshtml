@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JobPortal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white py-3">
+        <div class="container text-center">
+            <h1>JobPortal</h1>
+            <p>Кожен знайде своє</p>
+        </div>
+    </header>
+
+
+    <main class="container my-3">
+        @RenderBody()
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-2">
+        <p>&copy; @DateTime.Now.Year JobPortal</p>
+    </footer>
+
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
