@@ -7,6 +7,7 @@ namespace JobPortal.Models
     {
         public long? UsersID { get; set; }
         public string Name { get; set; }
+        public string LastName { get; set; }
 
         public int Password { get; set; }
         public string Login { get; set; }

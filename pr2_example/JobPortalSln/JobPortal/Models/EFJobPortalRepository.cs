@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace JobPortal.Models
 {
@@ -10,6 +11,9 @@ namespace JobPortal.Models
             context = ctx;
         }
         public IQueryable<Users> Users => context.Users;
+        public IQueryable<Job> Jobs => context.Jobs.Include(j => j.Category);
+        public IQueryable<Category> Categories => context.Categories;
+        public IQueryable<Application> Applications => context.Applications;
 
     }
 }

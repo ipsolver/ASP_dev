@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Bc/sJLG/afk=",
+  "dgSpecHash": "sbEYKMwxVYw=",
   "success": true,
   "projectFilePath": "D:\\ASP_development\\pr2_example\\JobPortalSln\\JobPortal\\JobPortal.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\мфвук\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.3\\microsoft.entityframeworkcore.design.9.0.3.nupkg.sha512",
     "C:\\Users\\мфвук\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.3\\microsoft.entityframeworkcore.relational.9.0.3.nupkg.sha512",
     "C:\\Users\\мфвук\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.3\\microsoft.entityframeworkcore.sqlserver.9.0.3.nupkg.sha512",
+    "C:\\Users\\мфвук\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.3\\microsoft.entityframeworkcore.tools.9.0.3.nupkg.sha512",
     "C:\\Users\\мфвук\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.3\\microsoft.extensions.caching.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\мфвук\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.3\\microsoft.extensions.caching.memory.9.0.3.nupkg.sha512",
     "C:\\Users\\мфвук\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",

@@ -11,10 +11,19 @@
     <header class="bg-primary text-white py-3">
         <div class="container text-center">
             <h1>JobPortal</h1>
-            <p>Кожен знайде своє</p>
+            <p>For searching yourself</p>
         </div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <form method="post" asp-controller="Account" asp-action="Logout">
+                <button type="submit" class="btn btn-danger">Вийти</button>
+            </form>
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Увійти</a>
+        }
     </header>
-
 
     <main class="container my-3">
         @RenderBody()

@@ -1,0 +1,54 @@
+﻿@model JobPortal.Models.Application
+
+<h2>Подати заявку на вакансію</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="JobID" />
+
+    <div class="form-group">
+        <label asp-for="CandidateID">Ваш ID (тимчасово для лаби)</label>
+        <input asp-for="CandidateID" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CoverLetter">Супровідний лист</label>
+        <textarea asp-for="CoverLetter" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Resume">Резюме</label>
+        <textarea asp-for="Resume" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Надіслати</button>
+</form>
+
+<script>
+    document.querySelectorAll('input, textarea').forEach(function (element) {
+        element.addEventListener('focus', function () {
+            saveToSession();
+        });
+
+        element.addEventListener('blur', function () {
+            saveToSession();
+        });
+    });
+
+    function saveToSession() {
+        let application = {};
+        document.querySelectorAll('input, textarea').forEach(function (element) {
+            application[element.name] = element.value;
+        });
+
+        let jobId = document.querySelector('input[name="JobID"]').value;
+
+            fetch('/Job/SaveApplicationToSession', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ jobId: jobId, application: application })
+        });
+    }
+</script>
+
