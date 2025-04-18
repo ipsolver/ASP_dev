@@ -1,0 +1,52 @@
+﻿@model IEnumerable<string>
+
+<div class="navigation-menu">
+    <h4>Фільтрувати за категорією</h4>
+    @foreach (var category in Model)
+    {
+        <a asp-controller="Job" asp-action="Index" asp-route-category="@category"
+           class="@(category == ViewBag.SelectedCategory ? "selected" : "")">
+            @category
+        </a>
+    }
+</div>
+
+<style>
+    .navigation-menu {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 15px;
+    }
+
+        .navigation-menu h4 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .navigation-menu a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 10px;
+            color: #0056b3;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            .navigation-menu a:hover {
+                background-color: #e9ecef;
+                color: #0056b3;
+            }
+
+    .selected {
+        font-weight: bold;
+        background-color: #007bff;
+        color: white;
+    }
+</style>

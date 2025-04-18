@@ -1,0 +1,39 @@
+﻿@model IEnumerable<JobPortal.Models.Application>
+
+@{
+    ViewData["Title"] = "Applications";
+}
+
+<h2>Applications</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New Application</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Job Title</th>
+            <th>Candidate</th>
+            <th>Application Date</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in Model)
+        {
+            <tr>
+                <td>@app.Job?.Title</td>
+                <td>@app.Candidate?.Login</td>
+                <td>@app.ApplicationDate.ToShortDateString()</td>
+                <td>@app.Status</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@app.ApplicationID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@app.ApplicationID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@app.ApplicationID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

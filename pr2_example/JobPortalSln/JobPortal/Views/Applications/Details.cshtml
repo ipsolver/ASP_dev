@@ -1,0 +1,32 @@
+﻿@model JobPortal.Models.Application
+
+@{
+    ViewData["Title"] = "Application Details";
+}
+
+<h2>Application Details</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Job</dt>
+        <dd class="col-sm-10">@Model.Job?.Title</dd>
+
+        <dt class="col-sm-2">Candidate</dt>
+        <dd class="col-sm-10">@Model.Candidate?.Login</dd>
+
+        <dt class="col-sm-2">Cover Letter</dt>
+        <dd class="col-sm-10">@Model.CoverLetter</dd>
+
+        <dt class="col-sm-2">Resume</dt>
+        <dd class="col-sm-10">@Model.Resume</dd>
+
+        <dt class="col-sm-2">Date</dt>
+        <dd class="col-sm-10">@Model.ApplicationDate</dd>
+
+        <dt class="col-sm-2">Status</dt>
+        <dd class="col-sm-10">@Model.Status</dd>
+    </dl>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.ApplicationID" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
