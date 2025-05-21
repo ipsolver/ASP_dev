@@ -1,0 +1,47 @@
+﻿@page "/register"
+@inject IAuthService AuthService
+@inject NavigationManager Navigation
+
+<h3>Register</h3>
+
+<EditForm Model="registerModel" OnValidSubmit="HandleRegister">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText @bind-Value="registerModel.Name" placeholder="First Name" class="form-control" />
+    <InputText @bind-Value="registerModel.LastName" placeholder="Last Name" class="form-control" />
+    <InputText @bind-Value="registerModel.Login" placeholder="Login" class="form-control" />
+    <InputText @bind-Value="registerModel.Password" placeholder="Password" type="password" class="form-control" />
+    <InputText @bind-Value="registerModel.PhoneNumber" placeholder="Phone" class="form-control" />
+    <InputText @bind-Value="registerModel.City" placeholder="City" class="form-control" />
+    <InputTextArea @bind-Value="registerModel.Description" placeholder="About You" class="form-control" />
+    <InputSelect @bind-Value="registerModel.Type_access" class="form-control">
+        <option value="Employee">Employee</option>
+        <option value="Manager">Manager</option>
+    </InputSelect>
+
+    <button class="btn btn-primary mt-3" type="submit">Register</button>
+</EditForm>
+
+@if (errorMessage != null)
+{
+    <p class="text-danger">@errorMessage</p>
+}
+
+@code {
+    private Users registerModel = new();
+    private string? errorMessage;
+
+    private async Task HandleRegister()
+    {
+        var success = await AuthService.Register(registerModel);
+        if (success)
+        {
+            Navigation.NavigateTo("/login");
+        }
+        else
+        {
+            errorMessage = "Registration failed. Try again.";
+        }
+    }
+}

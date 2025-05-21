@@ -1,0 +1,12 @@
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\JobPortalCore.csproj.AssemblyReference.cache
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\JobPortalCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\JobPortalCore.AssemblyInfoInputs.cache
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\JobPortalCore.AssemblyInfo.cs
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\JobPortalCore.csproj.CoreCompileInputs.cache
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\bin\Debug\net8.0\JobPortalCore.deps.json
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\bin\Debug\net8.0\JobPortalCore.dll
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\bin\Debug\net8.0\JobPortalCore.pdb
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\JobPortalCore.dll
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\refint\JobPortalCore.dll
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\JobPortalCore.pdb
+E:\my_JobPortal2\JobPortalSln\JobPortalCore\obj\Debug\net8.0\ref\JobPortalCore.dll

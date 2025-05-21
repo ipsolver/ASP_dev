@@ -1,0 +1,226 @@
+﻿@page "/applications"
+@inject HttpClient Http
+@inject JobPortalClient.Services.IAuthService AuthService
+@inject NavigationManager Navigation
+
+
+<h3>Applications</h3>
+
+@if (isLoading)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <button class="btn btn-primary mb-3" @onclick="ShowCreateForm">Create New Application</button>
+
+    @if (showForm)
+    {
+        <EditForm Model="editingApp" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="mb-2">
+                <label>Candidate ID:</label>
+                <InputNumber @bind-Value="editingApp.CandidateID" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Job ID:</label>
+                <InputNumber @bind-Value="editingApp.JobID" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Resume:</label>
+                <InputText @bind-Value="editingApp.Resume" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Cover Letter:</label>
+                <InputTextArea @bind-Value="editingApp.CoverLetter" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Status:</label>
+                <InputText @bind-Value="editingApp.Status" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-success">@((editingApp.ApplicationID == 0) ? "Create" : "Update")</button>
+            <button type="button" class="btn btn-secondary ms-2" @onclick="CancelEdit">Cancel</button>
+        </EditForm>
+    }
+
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Application ID</th>
+                <th>Candidate ID</th>
+                <th>Job ID</th>
+                <th>Resume</th>
+                <th>Status</th>
+                <th>Application Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var app in apps)
+            {
+                <tr>
+                    <td>@app.ApplicationID</td>
+                    <td>@app.CandidateID</td>
+                    <td>@app.JobID</td>
+                    <td>@app.Resume</td>
+                    <td>@app.Status</td>
+                    <td>@app.ApplicationDate.ToShortDateString()</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary me-2" @onclick="() => EditApplication(app)">Edit</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => ConfirmDelete(app.ApplicationID)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (showDeleteConfirm)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <h5>Are you sure you want to delete application @deleteId?</h5>
+                <button class="btn btn-danger me-2" @onclick="DeleteApplicationConfirmed">Yes, Delete</button>
+                <button class="btn btn-secondary" @onclick="CancelDelete">Cancel</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    List<Application> apps = new();
+    bool isLoading = true;
+
+    bool showForm = false;
+    Application editingApp = new();
+
+    bool showDeleteConfirm = false;
+    int deleteId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!await AuthService.IsAuthenticated())
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadApplications();
+    }
+
+
+    async Task LoadApplications()
+    {
+        isLoading = true;
+        try
+        {
+            var response = await Http.GetAsync("api/Applications");
+            if (response.IsSuccessStatusCode)
+            {
+                apps = await response.Content.ReadFromJsonAsync<List<Application>>() ?? new List<Application>();
+            }
+            else
+            {
+                apps = new List<Application>();
+                Console.WriteLine($"Error loading: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception loading: {ex.Message}");
+            apps = new List<Application>();
+        }
+        isLoading = false;
+    }
+
+    void ShowCreateForm()
+    {
+        editingApp = new Application();
+        showForm = true;
+    }
+
+    void CancelEdit()
+    {
+        editingApp = new Application();
+        showForm = false;
+    }
+
+    void EditApplication(Application app)
+    {
+        // Створи копію, щоб не змінювати напряму до підтвердження
+        editingApp = new Application
+            {
+                ApplicationID = app.ApplicationID,
+                CandidateID = app.CandidateID,
+                JobID = app.JobID,
+                Resume = app.Resume,
+                CoverLetter = app.CoverLetter,
+                Status = app.Status,
+                ApplicationDate = app.ApplicationDate
+            };
+        showForm = true;
+    }
+
+    async Task HandleValidSubmit()
+    {
+        if (editingApp.ApplicationID == 0)
+        {
+            // Create new
+            var response = await Http.PostAsJsonAsync("api/Applications", editingApp);
+            if (response.IsSuccessStatusCode)
+            {
+                await LoadApplications();
+                showForm = false;
+            }
+            else
+            {
+                Console.WriteLine($"Create failed: {response.StatusCode}");
+            }
+        }
+        else
+        {
+            // Update existing
+            var response = await Http.PutAsJsonAsync($"api/Applications/{editingApp.ApplicationID}", editingApp);
+            if (response.IsSuccessStatusCode)
+            {
+                await LoadApplications();
+                showForm = false;
+            }
+            else
+            {
+                Console.WriteLine($"Update failed: {response.StatusCode}");
+            }
+        }
+    }
+
+    void ConfirmDelete(int id)
+    {
+        deleteId = id;
+        showDeleteConfirm = true;
+    }
+
+    void CancelDelete()
+    {
+        showDeleteConfirm = false;
+        deleteId = 0;
+    }
+
+    async Task DeleteApplicationConfirmed()
+    {
+        var response = await Http.DeleteAsync($"api/Applications/{deleteId}");
+        if (response.IsSuccessStatusCode)
+        {
+            await LoadApplications();
+        }
+        else
+        {
+            Console.WriteLine($"Delete failed: {response.StatusCode}");
+        }
+        showDeleteConfirm = false;
+        deleteId = 0;
+    }
+}

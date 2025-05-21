@@ -1,0 +1,30 @@
+﻿@model JobPortal.Models.ViewModels.JobsList
+
+<h2>Вакансії</h2>
+<div id="wrapper">
+    <div id="sidebar">
+    @await Component.InvokeAsync("NavigationMenu")
+    </div>
+
+</div>
+<div class="container">
+    @foreach (var job in Model.Jobs)
+    {
+        <partial name="JobSummary" model="job" />
+        <a asp-controller="Job" asp-action="Apply" asp-route-jobId="@job.JobID" class="btn btn-primary">Надіслати відгук</a>
+    }
+
+    <nav>
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= Model.PagingInfo.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PagingInfo.CurrentPage ? "active" : "")">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-category="@Model.CurrentCategory"
+                       asp-route-page="@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

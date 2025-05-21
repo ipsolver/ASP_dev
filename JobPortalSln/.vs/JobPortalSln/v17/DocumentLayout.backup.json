@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\my_JobPortal2\\JobPortalSln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\pages\\userlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\pages\\userlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C770F55-93C8-422E-9544-F8DD6D6179DD}|JobPortalAPI\\JobPortalAPI.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C770F55-93C8-422E-9544-F8DD6D6179DD}|JobPortalAPI\\JobPortalAPI.csproj|solutionrelative:jobportalapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|e:\\my_jobportal2\\jobportalsln\\jobportalclient\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37685D0C-15C8-48C4-8CBF-4F31CDFB0B51}|JobPortalClient\\JobPortalClient.csproj|solutionrelative:jobportalclient\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal2\\jobportalsln\\jobportal\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 344,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.razor",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "JobPortalClient\\Pages\\Login.razor",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Pages\\Login.razor",
+              "RelativeToolTip": "JobPortalClient\\Pages\\Login.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T16:46:36.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "JobPortalClient\\Models\\Users.cs",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Models\\Users.cs",
+              "RelativeToolTip": "JobPortalClient\\Models\\Users.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:36:41.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserList.razor",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Pages\\UserList.razor",
+              "RelativeDocumentMoniker": "JobPortalClient\\Pages\\UserList.razor",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Pages\\UserList.razor",
+              "RelativeToolTip": "JobPortalClient\\Pages\\UserList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T16:34:06.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.razor",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "JobPortalClient\\Pages\\Register.razor",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Pages\\Register.razor",
+              "RelativeToolTip": "JobPortalClient\\Pages\\Register.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T16:33:31.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "JobPortalAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JobPortalAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:29:13.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "JobPortalClient\\Services\\IAuthService.cs",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Services\\IAuthService.cs",
+              "RelativeToolTip": "JobPortalClient\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:16:41.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "JobPortalClient\\Services\\AuthService.cs",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Services\\AuthService.cs",
+              "RelativeToolTip": "JobPortalClient\\Services\\AuthService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:15:52.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "JobPortalClient\\Layout\\NavMenu.razor",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "JobPortalClient\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAqwFAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T16:14:33.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Program.cs",
+              "RelativeDocumentMoniker": "JobPortalClient\\Program.cs",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortalClient\\Program.cs",
+              "RelativeToolTip": "JobPortalClient\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T14:02:35.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\my_JobPortal2\\JobPortalSln\\JobPortal\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\my_JobPortal2\\JobPortalSln\\JobPortal\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "JobPortal\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAqwIAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T13:36:52.505Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 407,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

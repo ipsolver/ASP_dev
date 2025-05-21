@@ -1,0 +1,11 @@
+﻿@model JobPortal.Models.Job
+
+<div class="card mb-2 shadow-sm">
+    <div class="card-body">
+        <h3 class="card-title">@Model.Title</h3>
+        <h4 class="card-subtitle text-muted">@Model.Location</h4>
+        <p class="card-text mt-2">@Model.Description</p>
+        <p class="card-text"><strong>Salary:</strong> @Model.Salary?.ToString("C")</p>
+        <p class="card-text"><strong>Type:</strong> @Model.JobType</p>
+    </div>
+</div>
