@@ -1,0 +1,215 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\my_JobPortal3\\JobPortalSln\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\views\\shared\\_notificationcounter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\views\\shared\\_notificationcounter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\components\\useridprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\components\\useridprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\models\\usercategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\models\\usercategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\models\\ijobportalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\models\\ijobportalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|e:\\my_jobportal3\\jobportalsln\\jobportal\\views\\account\\notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D2D5896F-B3F7-4D70-9EA6-1A2B3CD7F260}|JobPortal\\JobPortal.csproj|solutionrelative:jobportal\\views\\account\\notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 344,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_NotificationCounter.cshtml",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Shared\\_NotificationCounter.cshtml",
+              "RelativeDocumentMoniker": "JobPortal\\Views\\Shared\\_NotificationCounter.cshtml",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Shared\\_NotificationCounter.cshtml",
+              "RelativeToolTip": "JobPortal\\Views\\Shared\\_NotificationCounter.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T21:15:54.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCategory.cs",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Models\\UserCategory.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Models\\UserCategory.cs",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Models\\UserCategory.cs",
+              "RelativeToolTip": "JobPortal\\Models\\UserCategory.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:21:38.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserIdProvider.cs",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Components\\UserIdProvider.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Components\\UserIdProvider.cs",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Components\\UserIdProvider.cs",
+              "RelativeToolTip": "JobPortal\\Components\\UserIdProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T17:15:09.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotificationHub.cs",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Hubs\\NotificationHub.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Hubs\\NotificationHub.cs",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Hubs\\NotificationHub.cs",
+              "RelativeToolTip": "JobPortal\\Hubs\\NotificationHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:46:03.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "JobPortal\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "JobPortal\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAmwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T16:17:40.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IJobPortalRepository.cs",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Models\\IJobPortalRepository.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Models\\IJobPortalRepository.cs",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Models\\IJobPortalRepository.cs",
+              "RelativeToolTip": "JobPortal\\Models\\IJobPortalRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T14:43:59.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Notifications.cshtml",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Account\\Notifications.cshtml",
+              "RelativeDocumentMoniker": "JobPortal\\Views\\Account\\Notifications.cshtml",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Account\\Notifications.cshtml",
+              "RelativeToolTip": "JobPortal\\Views\\Account\\Notifications.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T14:12:45.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "JobPortal\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "JobPortal\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T13:54:52.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Program.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Program.cs",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Program.cs",
+              "RelativeToolTip": "JobPortal\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwDAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T13:47:31.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JobController.cs",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Controllers\\JobController.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Controllers\\JobController.cs",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Controllers\\JobController.cs",
+              "RelativeToolTip": "JobPortal\\Controllers\\JobController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAIwGQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T13:44:18.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "JobPortal\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\my_JobPortal3\\JobPortalSln\\JobPortal\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "JobPortal\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAwwLQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T13:42:51.662Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 407,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

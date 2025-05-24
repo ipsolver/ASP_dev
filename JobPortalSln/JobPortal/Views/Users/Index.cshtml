@@ -1,0 +1,50 @@
+﻿@model IEnumerable<JobPortal.Models.Users>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h2>Users</h2>
+
+@if (!User.IsInRole("Manager") && !User.IsInRole("Employee"))
+{
+    <p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>LastName</th>
+            <th>Login</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>Type Access</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.LastName</td>
+                <td>@user.Login</td>
+                <td>@user.PhoneNumber</td>
+                <td>@user.City</td>
+                <td>@user.Type_access</td>
+                <td>
+                    @if (!User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@user.UsersID">Edit</a>
+                    }
+                    @if(!User.IsInRole("Manager") && !User.IsInRole("Employee"))
+                    {
+                    <a asp-action="Delete" asp-route-id="@user.UsersID">Delete</a>
+                    }
+                    <a asp-action="Details" asp-route-id="@user.UsersID">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

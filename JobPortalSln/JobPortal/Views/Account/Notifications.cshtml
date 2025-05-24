@@ -1,0 +1,23 @@
+﻿@model List<JobPortal.Models.Notification>
+@{
+    ViewData["Title"] = "Сповіщення";
+}
+
+<h2>Сповіщення</h2>
+
+@if (!Model.Any())
+{
+    <p>У вас поки що немає сповіщень</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var notification in Model)
+        {
+            <li class="list-group-item">
+                <strong>@notification.CreatedAt.ToShortDateString()</strong> —
+                @notification.Message
+            </li>
+        }
+    </ul>
+}

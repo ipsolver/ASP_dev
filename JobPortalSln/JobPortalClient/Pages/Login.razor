@@ -1,0 +1,59 @@
+﻿@page "/login"
+@using Blazored.LocalStorage
+@inject HttpClient Http
+@inject NavigationManager Navigation
+@inject ILocalStorageService LocalStorage
+
+<h3>Вхід</h3>
+
+<EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText @bind-Value="loginModel.Login" placeholder="Логін" class="form-control" />
+    <InputText @bind-Value="password" placeholder="Пароль" class="form-control" type="password" />
+    <button type="submit" class="btn btn-primary mt-2">Увійти</button>
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="text-danger mt-2">@errorMessage</div>
+    }
+</EditForm>
+
+@code {
+    private LoginModel loginModel = new();
+    private string password;
+    private string errorMessage;
+
+    private async Task HandleLogin()
+    {
+        loginModel.Password = password;
+
+        var response = await Http.PostAsJsonAsync("api/Auth/login", loginModel);
+        if (response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<TokenResponse>();
+            await LocalStorage.SetItemAsync("authToken", result.Token);
+
+            Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", result.Token);
+            Navigation.NavigateTo("/");
+        }
+        else
+        {
+            errorMessage = "Невірний логін або пароль.";
+        }
+    }
+
+    public class LoginModel
+    {
+        public string Login { get; set; }
+        public string Password { get; set; }
+    }
+
+    public class TokenResponse
+    {
+        public string Token { get; set; }
+    }
+}

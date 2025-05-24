@@ -1,0 +1,90 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Blazor WebAssembly publish output
+wwwroot/dist/
+wwwroot/_framework/
+wwwroot/_content/
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Dotnet CLI
+.project.lock.json
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Rider-specific
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+
+# User secrets
+secrets.json
+*.secret.json
+
+# VS Code settings
+.vscode/
+
+# ASP.NET publish folder
+publish/
+
+# Node modules (if any frontend tooling is used)
+node_modules/
+
+# libman cache
+.libman/
+
+# JetBrains Rider
+.idea/
+
+# Resharper
+*.DotSettings.user
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Local History (Rider/IDEA)
+.idea/.idea.Web*/.history/
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+# Others
+*.swp
+*.tmp

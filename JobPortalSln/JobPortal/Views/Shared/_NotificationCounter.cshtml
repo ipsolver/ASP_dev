@@ -1,0 +1,17 @@
+﻿@inject JobPortal.Models.IJobPortalRepository repository
+@using System.Security.Claims
+
+@{
+    int count = 0;
+    var userIdClaim = Context.User?.FindFirst(ClaimTypes.NameIdentifier);
+    if (userIdClaim != null)
+    {
+        long userId = long.Parse(userIdClaim.Value);
+        count = repository.Notifications
+            .Count(n => n.UsersID == userId && !n.IsRead);
+    }
+}
+
+<span id="notificationCount" class="badge bg-danger">
+    @(count > 0 ? count.ToString() : "")
+</span>

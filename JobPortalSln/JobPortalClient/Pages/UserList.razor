@@ -1,0 +1,214 @@
+﻿@page "/users"
+@inject JobPortalClient.Services.IAuthService AuthService
+@inject JobPortalClient.Services.IUserService UserService
+@inject NavigationManager Navigation
+
+<h3>Users</h3>
+
+@if (!isLoaded)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <button class="btn btn-primary mb-3" @onclick="ShowCreateForm">Create New User</button>
+
+    @if (showForm)
+    {
+        <EditForm Model="editingUser" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="mb-2">
+                <label>Name:</label>
+                <InputText @bind-Value="editingUser.Name" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Last Name:</label>
+                <InputText @bind-Value="editingUser.LastName" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Login:</label>
+                <InputText @bind-Value="editingUser.Login" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Password:</label>
+                <InputNumber @bind-Value="editingUser.Password" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Phone Number:</label>
+                <InputText @bind-Value="editingUser.PhoneNumber" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>City:</label>
+                <InputText @bind-Value="editingUser.City" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Description:</label>
+                <InputText @bind-Value="editingUser.Description" class="form-control" />
+            </div>
+            <div class="mb-2">
+                <label>Access Type:</label>
+                <InputSelect @bind-Value="editingUser.Type_access" class="form-control">
+                    <option value="Employee">Employee</option>
+                    <option value="Manager">Manager</option>
+                </InputSelect>
+            </div>
+
+            <button type="submit" class="btn btn-success">@((editingUser.UsersID == null) ? "Create" : "Update")</button>
+            <button type="button" class="btn btn-secondary ms-2" @onclick="CancelEdit">Cancel</button>
+        </EditForm>
+    }
+
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Login</th>
+                <th>Type</th>
+                <th>City</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.UsersID</td>
+                    <td>@user.Name @user.LastName</td>
+                    <td>@user.Login</td>
+                    <td>@user.Type_access</td>
+                    <td>@user.City</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary me-2" @onclick="() => EditUser(user)">Edit</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => ConfirmDelete(user.UsersID.Value)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (showDeleteConfirm)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <h5>Are you sure you want to delete user @deleteId?</h5>
+                <button class="btn btn-danger me-2" @onclick="DeleteUserConfirmed">Yes, Delete</button>
+                <button class="btn btn-secondary" @onclick="CancelDelete">Cancel</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private List<Users> users = new();
+    private Users editingUser = new();
+    private bool showForm = false;
+    private bool showDeleteConfirm = false;
+    private long deleteId;
+    private bool isLoaded = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!await AuthService.IsAuthenticated())
+        {
+            Navigation.NavigateTo("/login");
+            return;
+        }
+
+        await LoadUsers();
+    }
+
+    async Task LoadUsers()
+    {
+        isLoaded = false;
+        try
+        {
+            users = await UserService.GetAllAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading users: {ex.Message}");
+        }
+        isLoaded = true;
+    }
+
+    void ShowCreateForm()
+    {
+        editingUser = new Users();
+        showForm = true;
+    }
+
+    void CancelEdit()
+    {
+        showForm = false;
+        editingUser = new Users();
+    }
+
+    void EditUser(Users user)
+    {
+        editingUser = new Users
+            {
+                UsersID = user.UsersID,
+                Name = user.Name,
+                LastName = user.LastName,
+                Login = user.Login,
+                Password = user.Password,
+                PhoneNumber = user.PhoneNumber,
+                City = user.City,
+                Description = user.Description,
+                Type_access = user.Type_access
+            };
+        showForm = true;
+    }
+
+    async Task HandleValidSubmit()
+    {
+        try
+        {
+            if (editingUser.UsersID == null)
+            {
+                await UserService.CreateAsync(editingUser);
+            }
+            else
+            {
+                await UserService.UpdateAsync(editingUser.UsersID.Value, editingUser);
+            }
+            await LoadUsers();
+            CancelEdit();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error saving user: {ex.Message}");
+        }
+    }
+
+    void ConfirmDelete(long id)
+    {
+        deleteId = id;
+        showDeleteConfirm = true;
+    }
+
+    void CancelDelete()
+    {
+        showDeleteConfirm = false;
+        deleteId = 0;
+    }
+
+    async Task DeleteUserConfirmed()
+    {
+        try
+        {
+            await UserService.DeleteAsync(deleteId);
+            await LoadUsers();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Delete failed: {ex.Message}");
+        }
+        showDeleteConfirm = false;
+    }
+}
